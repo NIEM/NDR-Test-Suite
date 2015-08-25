@@ -70,7 +70,7 @@ $(TOKEN_EXTRACTED_SCHEMATRON): $(ISO_SCHEMATRON_XSLT2_ZIP) $(TOKEN_CHECKSUMS_OK)
 	rm -rf pkg/iso-schematron-xslt2
 	rm -f $(TOKEN_PATCHED_SCHEMATRON)
 	mkdir -p pkg/iso-schematron-xslt2
-	unzip -d pkg/iso-schematron-xslt2 $<
+	unzip -aa -d pkg/iso-schematron-xslt2 $<
 	mkdir -p $(dir $@)
 	touch $@
 
